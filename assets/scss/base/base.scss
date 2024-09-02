@@ -1,0 +1,25 @@
+
+
+// 圖片佔滿
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+//標題字距
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    letter-spacing: 0.1em;
+}
+
+
+//em 會以目前p標籤去縮放
+//內文字距
+p{
+    letter-spacing: 0.05em;
+}
