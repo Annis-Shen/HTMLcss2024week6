@@ -1,30 +1,53 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-6">
+    <div class="container">
+      <a class="navbar-brand me-6" href="#"><img src="../assets/images/Vector.png" alt="logo"></a>
+      <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+        
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="d-flex bg-white rounded-pill">
-            <input class="form-control me-2  border-0 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn border-0" type="submit"><span class="material-symbols-outlined">
+      <div class="collapse navbar-collapse align-items-start pt-4" id="navbarSupportedContent">
+        <form class="d-flex bg-white rounded-pill me-auto">
+            <input class="form-control me-2 border-0 rounded-pill text-gray-200" type="search" placeholder="搜尋文章" aria-label="Search">
+            <button class="btn border-0" type="submit"><span class="material-symbols-outlined text-accent-200">
                 search
               </span></button>
           </form>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
-          </li>
-        </ul>
+
+       <!--手機版選單-->  
+        <div class="vh-100 d-lg-none">
+            <ul class="navbar-nav mb-2 mb-lg-0 ps-2">
+                <li class="nav-item mt-6">
+                  <a class="nav-link active" aria-current="page" href="#">所有文章</a>
+                </li>
+                <li class="nav-item  my-5">
+                  <a class="nav-link p-2" href="#">訂閱方案</a>
+                </li>
+                <li class="nav-item  mb-6 ">
+                  <a class="nav-link" href="#">關於我們</a>
+                </li>
+                <li class="nav-item d-grid gap-2 mt-3">
+                  <a class="btn btn-accent-200 link-light" href="#" role="button">登入/註冊</a>
+                </li>
+              </ul>
+        </div>
+        <!--電腦版選單-->
+        <div class="d-md-none d-lg-block">
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-center ps-2">
+                <li class="nav-item me-lg-7">
+                  <a class="nav-link active" aria-current="page" href="#">所有文章</a>
+                </li>
+                <li class="nav-item me-lg-7">
+                  <a class="nav-link p-2" href="#">訂閱方案</a>
+                </li>
+                <li class="nav-item me-lg-7">
+                  <a class="nav-link" href="#">關於我們</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-accent-200 link-light" href="#" role="button">登入/註冊</a>
+                </li>
+              </ul>
+        </div>
+        
         
       </div>
     </div>
